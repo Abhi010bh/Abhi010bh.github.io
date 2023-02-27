@@ -74,3 +74,50 @@
     font-style: normal;
 
 }
+.navbar .navbar-brand{
+    font-family: Ubuntu, sans-serif;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+  }
+   .navbar   .nav-link {
+    font-family: 'Open Sans';
+   
+    color: rgb(125, 119, 123);
+  
+  }
+  .c,body{
+    background-color:#FFFFFF;/*#FFDACC*/
+    font-family: 'Inter';
+  }
+  .hdr{
+      background-color:#edc5c2;
+      font-family: 'Open Sans', serif;
+      font-weight: bolder;
+  }
+  .hf{
+    color:rgb(60, 54, 54);
+  }
+  
+  .my-gradient1 {
+  background: linear-gradient(20deg, #f1c9ec, #ab84cb) !important;
+  }
+  .my-gradient2 {
+  background: linear-gradient(40deg, #f68084, #a6c0fe) !important;
+  }
+   .my-gradient {
+  background: linear-gradient(40deg, #bf f68084, #bf a6c0fe) !important;
+  }
+  p.l{
+    color:rgb(73, 67, 67);
+  }
+ @media screen and (min-width: 601px) {
+  .ab{
+      font-size:4 rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+  .ab{    font-size: 5 rem;
+      }
+    }
+  .card{overflow:auto;}
