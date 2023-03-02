@@ -155,3 +155,17 @@
     align-items: center;
     justify-content: center;
   }
+
+  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax-container1{
+    background-attachment: scroll;
+  }
+} 
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax-container2{
+    background-attachment: scroll;
+  }
+} 
