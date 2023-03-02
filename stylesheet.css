@@ -121,3 +121,37 @@
       }
     }
   .card{overflow:auto;}
+
+  .parallax-container1{
+    /*  this is where the magic happens:  */
+    background-image: url(https://raw.githubusercontent.com/Abhi010bh/Filehost/master/bg2.jpg?raw=true);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  
+    /* dimensions are important, ensure it is tall enough to scroll */ 
+    min-height: 100vh;
+  
+    /* you are free to lay out the container items with flexbox or whatever means you wish */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .parallax-container2{
+    /*  this is where the magic happens:  */
+    background-image: url(https://raw.githubusercontent.com/Abhi010bh/Filehost/master/bg3.jpg?raw=true);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  
+    /* dimensions are important, ensure it is tall enough to scroll */ 
+    min-height: 100vh;
+  
+    /* you are free to lay out the container items with flexbox or whatever means you wish */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
