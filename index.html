@@ -36,8 +36,10 @@
    
     <script>
       $(document).ready(function(){
-        $("#myModal").modal('show');
-      });
+    if($(window).width()<768){
+		$("#myModal").modal('show');
+	}
+  });
     </script>
 
 </head>
@@ -80,28 +82,28 @@
               </ul>
             </div>
           </nav>
-          <div id="myModal" class="modal fade">
+          <div id="myModal" class="modal fade" style="font-family: 'Mynerve', cursive;">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Subscribe our Newsletter</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-header ">
+                        <h1 class="modal-title text-center mx-auto " >Using a Mobile browser, are ya?</h5>
+                        
                     </div>
-                    <div class="modal-body">
-                <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email Address">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Subscribe</button>
-                        </form>
+                    <div class="modal-body text-center flex-column" style="font-family: 'Single Day', cursive;">
+                        <p>You would have loved the PC version.....</p>
+                        <p>Parallax..& stuff</p>
+                        <p>Just sayin....<p>
+                          
+                        <img src="https://cdn.pixabay.com/photo/2020/07/04/07/33/laptop-5368570_960_720.jpg">
+                        <button type="button" class="m-2 p-2 bg-blue-200 hover:shadow hover:bg-blue-600" data-bs-dismiss="modal" aria-label="Close"><span class=" text-red-500">Continue, Anyway</span></button>
+                       
+                         
+                            
+                       
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
     
     <div class="parallax-container1">
   <div class=" pt-2  pb-5 " style="color:#efe8e9" >
