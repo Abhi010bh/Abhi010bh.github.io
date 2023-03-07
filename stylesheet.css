@@ -131,7 +131,7 @@
   
     /* dimensions are important, ensure it is tall enough to scroll */ 
     min-height: 100vh;
-  
+    min-width: 100vh;
     /* you are free to lay out the container items with flexbox or whatever means you wish */
     display: flex;
     flex-direction: column;
@@ -169,4 +169,31 @@
     background-attachment: scroll;
   }
 } 
+
+.reveal{
+  
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.active.fade-right{
+  animation:fade-right 2s all ease;
+}
+
+@keyframes fade-right
+{
+  0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
 
