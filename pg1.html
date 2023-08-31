@@ -356,22 +356,26 @@
 
         // Attach click event listeners to each button
         pdfButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                // Get the PDF filename from the data-pdf attribute
-                const pdfFilename = button.getAttribute('data-pdf');
+    button.addEventListener('click', function () {
+        const pdfFilename = button.getAttribute('data-pdf');
 
-                // Set the data attribute to the new PDF
-                pdfObject.setAttribute('data', pdfFilename);
+        // Clear the data attribute first
+        pdfObject.removeAttribute('data');
 
-                // Show the PDF modal
-                document.getElementById('pdfModal').style.display = 'block';
-            });
-        });
+        // Set the data attribute to the new PDF
+        pdfObject.setAttribute('data', pdfFilename);
 
-        // Close the modal when the close button is clicked
-        document.getElementsByClassName('close')[0].addEventListener('click', function () {
-            document.getElementById('pdfModal').style.display = 'none';
-        });
+        // Show the PDF modal
+        document.getElementById('pdfModal').style.display = 'block';
+    });
+});
+
+
+       // Close the modal when the close button is clicked
+document.getElementsByClassName('close')[0].addEventListener('click', function () {
+    document.getElementById('pdfModal').style.display = 'none';
+    pdfObject.removeAttribute('data'); // Clear the data attribute
+});
 
         // Close the modal when clicking outside the modal
         window.addEventListener('click', function (event) {
