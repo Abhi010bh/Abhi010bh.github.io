@@ -36,10 +36,26 @@
     <nav class="navbar navbar-nav-scroll  navbar-expand-lg navbar-text shadow navbar-light  top-0 position-sticky  "
         style=" background-color:#ffffff; font-family: 'Open Sans', serif; z-index: 2;">
 
-        <button class="navbar-toggler  d-lg-none" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon  d-lg-none"></span></button>
+        <div>
+            <button class="relative group  d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div
+                class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-white ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+                <div
+                  class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+                  <div
+                    class="bg-dark h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg]">
+                  </div>
+                  <div
+                    class="bg-dark h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-translate-x-10">
+                  </div>
+                  <div
+                    class="bg-dark h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg]">
+                  </div>
+                </div>
+              </div>
+            </button>
+          </div>
 
         <p class="h2 text-center navbar-brand d-none  position-relative"><img src="AbhiLOGO.png" class="object-fit"
                 alt="..." /></p>
@@ -79,7 +95,7 @@
         <div class="modal-content" style="height: 100vh; width:80vw">
             <span class="close">&times;</span>
             <object id="pdfObject" data="" type="application/pdf" width="100%" height="100%">
-               
+
             </object>
         </div>
     </div>
@@ -154,9 +170,8 @@
                         <span class="hidden">Like</span>
                         <i class="fa fa-heart"></i>
                     </a>
-                   
-                    <button class="text-indigo-500 inline-flex items-center pdfButton"
-                        data-pdf="Hope.pdf">Read</button>
+
+                    <button class="text-indigo-500 inline-flex items-center pdfButton" data-pdf="Hope.pdf">Read</button>
                 </footer>
 
             </article>
@@ -191,7 +206,7 @@
                         <span class="hidden">Like</span>
                         <i class="fa fa-heart"></i>
                     </a>
-                    
+
                     <button class="text-indigo-500 inline-flex items-center pdfButton"
                         data-pdf="Wings.pdf">Read</button>
 
@@ -266,7 +281,7 @@
                             </p>
                         </header>
                         <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                           Holding the
+                            Holding the
                         </p>
                         <footer class="flex items-center justify-between leading-none p-1 md:p-4">
                             <a class="flex items-center no-underline hover:underline text-black" href="#">
@@ -294,7 +309,7 @@
 
 
 
-    
+
     <div class="relative isolate overflow-hidden bg-slate-900 py-16 sm:py-24 lg:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
@@ -334,7 +349,8 @@
                         </div>
                         <dt class="mt-4 font-semibold text-white">Integrity</dt>
                         <dd class="mt-2 leading-7 text-gray-400">
-                            The articles have been crafted without any deliberate plagiarism to the extent of my conscientious awareness.</dd>
+                            The articles have been crafted without any deliberate plagiarism to the extent of my
+                            conscientious awareness.</dd>
                     </div>
                 </dl>
             </div>
