@@ -91,7 +91,7 @@
 
 
 
-    <!-- The Modal -->
+    <!-- The Modal >
     <div id="pdfModal" class="modal p-4 align-items-center mx-auto" style="background-color: rgba(0, 0, 0, 0.8);">
         <div class="modal-content" style="height: 100vh; width:80vw">
             <span class="close">&times;</span>
@@ -99,7 +99,7 @@
 
             </object>
         </div>
-    </div>
+    </div-->
 
 
     <div class="container px-3 pt-12 mx-auto flex flex-wrap my-auto  overflow-auto">
@@ -131,8 +131,8 @@
                     </a>
                    
 
-                    <button class="text-indigo-500 inline-flex items-center pdfButton"
-                        data-pdf="./Gloomyeyes.pdf">Read</button>
+                    <a target="_blank"type="button" class="text-indigo-500 inline-flex items-center "
+                    href="./Gloomyeyes.pdf">Read</a>
                 </footer>
 
             </article>
@@ -166,7 +166,10 @@
                     </a>
                     
 
-                    <button class="text-indigo-500 inline-flex items-center pdfButton" data-pdf="./Hope.pdf">Read</button>
+                    
+                    <a target="_blank" type="button" class="text-indigo-500 inline-flex items-center "
+                        href="./Hope.pdf">Read</a>
+
                 </footer>
 
             </article>
@@ -199,8 +202,8 @@
                     </a>
                    
 
-                    <button class="text-indigo-500 inline-flex items-center pdfButton"
-                        data-pdf="./Wings.pdf">Read</button>
+                    <a target="_blank"type="button" class="text-indigo-500 inline-flex items-center "
+                        href="./Wings.pdf">Read</a>
 
                 </footer>
 
@@ -347,7 +350,7 @@
             </div>
         </div>
     </div>
-    <script>
+    <script>/*
         // Get all buttons with class "pdfButton"
         const pdfButtons = document.querySelectorAll('.pdfButton');
 
@@ -374,7 +377,8 @@
        // Close the modal when the close button is clicked
 document.getElementsByClassName('close')[0].addEventListener('click', function () {
     document.getElementById('pdfModal').style.display = 'none';
-    pdfObject.removeAttribute('data'); // Clear the data attribute
+    try{pdfObject.removeAttribute('data');} // Clear the data attribute}
+    catch(err){console.log(err);}
 });
 
         // Close the modal when clicking outside the modal
@@ -386,5 +390,6 @@ document.getElementsByClassName('close')[0].addEventListener('click', function (
         // Show a message for browsers that don't support embedded PDFs
 
         pdfObject.innerHTML = "<p>Your browser does not support embedded PDFs. You can download the PDF <a href='your-pdf-file.pdf'>here</a>.</p>";
+        */
     </script>
 </body>
