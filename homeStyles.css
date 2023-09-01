@@ -1,8 +1,12 @@
 .cursor{
-    border-right:0.15rem solid #f87171;
+    
+    border-right:0.15rem solid transparent;
     overflow:hidden;
     white-space: nowrap;
-    animation: blink 0.75s  infinite,typing 3.5s steps(25,end);
+    animation:  blink 0.75s 5 ,typing 3.5s steps(25,end) forwards; /*forwards retains the final animation state*/
+    animation-delay: 2s;
+    visibility: hidden;
+   
   }
   
   @keyframes blink {
@@ -11,6 +15,32 @@
     
   }
   @keyframes typing {
-    from {width: 0%;}
-    to {width:100%;}
+    from {width: 0%;
+    visibility: hidden;}
+    to {width:100%;
+        visibility: visible;
+    }
   }
+
+  @media only screen and (max-device-width: 768px) {
+    .cursor{
+    
+        border-right:0.15rem solid transparent;
+        overflow:hidden;
+        white-space: nowrap;
+        animation:  blink 0.75s 5 ,typing 3.5s steps(25,end);
+        animation-delay: 5s;
+      }
+        
+      @keyframes blink {
+        from{border-color: transparent;}
+        to{border-color: #f87171;}
+        
+      }
+      @keyframes typing {
+        from {width: 0%;}
+        to {width:100%;
+        }
+      }
+  }
+  
