@@ -1,0 +1,16 @@
+.cursor{
+    border-right:0.15rem solid #f87171;
+    overflow:hidden;
+    white-space: nowrap;
+    animation: blink 0.75s  infinite,typing 3.5s steps(25,end);
+  }
+  
+  @keyframes blink {
+    from{border-color: transparent;}
+    to{border-color: #f87171;}
+    
+  }
+  @keyframes typing {
+    from {width: 0%;}
+    to {width:100%;}
+  }
