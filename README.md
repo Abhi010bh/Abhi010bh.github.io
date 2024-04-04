@@ -1,13 +1,14 @@
-# Abhi010bh.github.io
+# Abhi010bh.github.io & Throwback Time - My Frontend Journey
 
-Welcome to my personal portfolio website! This project showcases my skills and experiences through various technologies.
+## Introduction
+Welcome to my personal portfolio website and literary blog site! This project marks my early steps into frontend development, created as a course project during my 3rd semester web development course. I'm excited to share my progress and showcase the skills I've acquired.
 
-## Technologies Used:
+## Technologies Used
+- **HTML, CSS, JavaScript**: Foundational technologies for web development.
+- **Tailwind CSS and Bootstrap**: Leveraged to enhance design aesthetics and streamline development.
+- **Parallax Layout, Off-canvas Navbar, Responsiveness**: Key design features implemented to create an engaging user experience.
 
-1. **HTML, CSS, JavaScript**: These foundational web technologies are used to structure, style, and add interactivity to the website.
+## Acknowledgement
+Both projects represent significant milestones in my learning journey. I invite you to explore both websites and support my literary endeavors on the blog.
 
-2. **Bootstrap and Tailwind CSS**: Both Bootstrap and Tailwind CSS have been utilized to enhance the design and layout of the website. These frameworks provide pre-designed components and utilities to streamline the development process and ensure a responsive design.
-
-3. **jQuery**: jQuery has been employed to create a screen size-based modal on the homepage. This allows for a dynamic and user-friendly experience, adapting to different device sizes seamlessly.
-
-Feel free to explore the website to learn more about me and my projects! If you have any feedback or questions, don't hesitate to reach out.
+Thank you for your interest and support!
