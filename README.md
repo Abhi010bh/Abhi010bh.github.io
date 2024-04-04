@@ -12,3 +12,5 @@ Welcome to my personal portfolio website and literary blog site! This project ma
 Both projects represent significant milestones in my learning journey. I invite you to explore both websites and support my literary endeavors on the blog.
 
 Thank you for your interest and support!
+
+![Portfolio Screenshot]()
